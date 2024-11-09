@@ -1,4 +1,4 @@
-Ovaj repozitorij sadrži rješenja za dvije laboratorijske vježbe iz kolegija Sigurnost Računalnih Sustava na FER-u, ostale vježbe imaju fokus na praktični aspekt te ih nisam upload-ala. Svaka vježba se fokusira na različite aspekte sigurnosti računalnih sustava i zahtijeva implementaciju sigurnosnih mehanizama i prototipa alata.
+Ovaj repozitorij sadrži rješenja za dvije laboratorijske vježbe iz kolegija Sigurnost računalnih sustava na FER-u, ostale vježbe imaju fokus na praktični aspekt te ih nisam upload-ala. Svaka vježba se fokusira na različite aspekte sigurnosti računalnih sustava i zahtijeva implementaciju sigurnosnih mehanizama i prototipa alata.
 
 Sadržaj Repozitorija:
 

@@ -1,0 +1,17 @@
+Nakon pokretanja install.sh za instaliranje svih potrebnih paketa, pokrećemo run.sh skriptu za pokretanje našeg koda te provjeru funkcionalnosti, kod se sastoji od dva file-a, usermgmt.py i login.py.
+
+
+usermgmt.py
+Dodavanje korisnika (add) -  uzima korisničko ime, traži unos lozinke dvaput za potvrdu, te sprema korisničko ime i hashirane lozinke u user.json ako se lozinke podudaraju
+Promjena lozinke (passwd) - provjerava postojanje korisnika, a zatim omogućava unos nove lozinke s potvrdom i ažurira lozinku u datoteci
+Forsiranje promjene lozinke (forcepass) - označava korisnika tako da mora promijeniti lozinku pri sljedećoj prijavi
+Brisanje korisnika (del) - Uklanja korisnika iz datoteke.
+
+Funkcije koje se koriste:
+hash_user - računa SHA-256 hash od korisničkog imena
+hash_password - hashira lozinke koristeći bcrypt za dodatnu sigurnost
+check_password - provjerava ispravnost unesene lozinke s hashiranom lozinkom iz datoteke
+
+login.py
+Ovaj kod upravlja procesom prijave:
+Korisnik unosi korisničko ime i lozinku. Ako je lozinka ispravna i korisnik treba promijeniti lozinku (postavljeno preko forcepass), traži se nova lozinka, ako je prijavljivanje uspješno pokreće bash (simulirano ispisom "bash$").

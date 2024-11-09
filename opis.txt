@@ -1,0 +1,7 @@
+Za instalaciju svih potrebnih paketa prvo u terminalu pokrećemo install.sh skriptu:
+./install.sh
+
+Za pokretanje koda te provjeru funkcionalnosti u terminalu pokrećemo sim_crypt.sh skriptu:
+./sim_crypt.sh
+
+Ovaj kod je implementacija jednostavnog upravitelja lozinkama koji koristi Python i knjižnicu pycryptodome za kriptografske funkcije. Funkcija init inicijalizira upravitelja stvaranjem soli i ključa iz glavne lozinke. Lozinke se šifriraju i pohranjuju zajedno s njihovim HMAC potpisima za provjeru integriteta. Funkcije put i get omogućuju pohranu i dohvat šifriranih lozinki, provjeravajući pritom ispravnost glavne lozinke i integritet pohranjenih podataka. Kod koristi AES za šifriranje, scrypt za izvedbu ključa, i HMAC sa SHA256 za provjeru integriteta.
